@@ -17,7 +17,7 @@ func main() {
 	matches := re.FindAllStringSubmatch(text, -1)
 	var output string
 
-	if len(matches) >= 1 {
+	if len(matches) > 0 {
 		if matches[0][1] == "ahead" {
 			output += "+" + matches[0][2]
 		}
